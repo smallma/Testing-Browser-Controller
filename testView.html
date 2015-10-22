@@ -1,0 +1,273 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <style type="text/css">
+      #btn_open_all {
+        margin-top: 14px;
+      }
+    </style>
+    <nav>
+      <div class="nav-wrapper ">
+        <a href="#" class="brand-logo center">Testing View Controller</a>
+        <!-- <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul> -->
+      </div>
+    </nav>
+
+    <div class="row ">
+      <div class="input-field col offset-s1 s8">
+        <input id="webUrl" type="text">
+        <label>Web URL</label>
+      </div>
+      <div class="col s3">
+        <a id="btn_open_all" class="waves-effect waves-light btn red">Open All Views</a>
+      </div>
+    </div>
+
+    <div class="center ">
+      <div class="chip">Phone</div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m4 l4">
+
+        <!-- iPhone4 start -->
+        <div class="card z-depth-2">
+          <div class="card-content center">
+            <span class="card-title black-text">iPhone4</span>
+            <p>Width: 320px, Height: 480px</p>
+          </div>
+          <div class="card-action center">
+            <a data-id="iphone4" data-width="320" data-height="480" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_portrait</i></a>
+
+            <a data-id="iphone4" data-width="480" data-height="320" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_landscape</i></a>
+
+            <a data-id="iphone4" data-width="320" data-height="480" class="btn_open waves-effect waves-light btn red lighten-3"><i class="material-icons center white-text">open_in_new</i></a>
+          </div>
+        </div>
+        <!-- iPhone4 end -->
+      </div>
+
+      <div class="col s12 m4 l4">
+        <!-- iPhone5 start -->
+        <div class="card z-depth-2">
+          <div class="card-content center">
+            <span class="card-title black-text">iPhone5</span>
+            <p>Width: 320px, Height: 568px</p>
+          </div>
+          <div class="card-action center">
+            <a data-id="iphone5" data-width="320" data-height="568" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_portrait</i></a>
+
+            <a data-id="iphone5" data-width="568" data-height="320" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_landscape</i></a>
+
+            <a data-id="iphone5" data-width="320" data-height="568" class="btn_open waves-effect waves-light btn red lighten-3"><i class="material-icons center white-text">open_in_new</i></a>
+          </div>
+        </div>
+        <!-- iPhone5 end -->
+      </div>
+
+      <div class="col s12 m4 l4">
+        <!-- iPhone6 start -->
+        <div class="card z-depth-2">
+          <div class="card-content center">
+            <span class="card-title black-text">iPhone6</span>
+            <p>Width: 375px, Height: 667px</p>
+          </div>
+          <div class="card-action center">
+            <a data-id="iphone6" data-width="375" data-height="667" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_portrait</i></a>
+
+            <a data-id="iphone6" data-width="667" data-height="375" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_landscape</i></a>
+
+            <a data-id="iphone6" data-width="375" data-height="667" class="btn_open waves-effect waves-light btn red lighten-3"><i class="material-icons center white-text">open_in_new</i></a>
+          </div>
+        </div>
+        <!-- iPhone6 end -->
+      </div>
+
+      <div class="col s12 m4 l4">
+        <!-- iPhone6_plus start -->
+        <div class="card z-depth-2">
+          <div class="card-content center">
+            <span class="card-title black-text">iPhone6 plus</span>
+            <p>Width: 320px, Height: 480px</p>
+          </div>
+          <div class="card-action center">
+            <a data-id="iphone6_plus" data-width="320" data-height="480" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_portrait</i></a>
+
+            <a data-id="iphone6_plus" data-width="480" data-height="320" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_landscape</i></a>
+
+            <a data-id="iphone6_plus" data-width="320" data-height="480" class="btn_open waves-effect waves-light btn red lighten-3"><i class="material-icons center white-text">open_in_new</i></a>
+          </div>
+        </div>
+        <!-- iPhone6_plus end -->
+      </div>
+
+      <div class="col s12 m4 l4">
+        <!-- nexus4 start -->
+        <div class="card z-depth-2">
+          <div class="card-content center">
+            <span class="card-title black-text">Google Nexus 4</span>
+            <p>Width: 359px, Height: 598px</p>
+          </div>
+          <div class="card-action center">
+            <a data-id="nexus4" data-width="359" data-height="598" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_portrait</i></a>
+
+            <a data-id="nexus4" data-width="598" data-height="359" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_landscape</i></a>
+
+            <a data-id="nexus4" data-width="359" data-height="598" class="btn_open waves-effect waves-light btn red lighten-3"><i class="material-icons center white-text">open_in_new</i></a>
+          </div>
+        </div>
+        <!-- nexus4 end -->
+      </div>
+
+      <div class="col s12 m4 l4">
+        <!-- samsungS4 start -->
+        <div class="card z-depth-2">
+          <div class="card-content center">
+            <span class="card-title black-text">Samsung S4</span>
+            <p>Width: 360px, Height: 640px</p>
+          </div>
+          <div class="card-action center">
+            <a data-id="samsungS4" data-width="360" data-height="640" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_portrait</i></a>
+
+            <a data-id="samsungS4" data-width="640" data-height="360" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_landscape</i></a>
+
+            <a data-id="samsungS4" data-width="360" data-height="640" class="btn_open waves-effect waves-light btn red lighten-3"><i class="material-icons center white-text">open_in_new</i></a>
+          </div>
+        </div>
+        <!-- samsungS4 end -->
+      </div>
+
+      <div class=" center">
+        <div class="chip">Tablet</div>
+      </div>
+
+      <div class="col s12 m4 l4">
+        <!-- iPadMini start -->
+        <div class="card z-depth-2">
+          <div class="card-content center">
+            <span class="card-title black-text">iPad mini</span>
+            <p>Width: 1024px, Height: 768px</p>
+          </div>
+          <div class="card-action center">
+            <a data-id="iPadMini" data-width="1024" data-height="768" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_portrait</i></a>
+
+            <a data-id="iPadMini" data-width="768" data-height="1024" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_landscape</i></a>
+
+            <a data-id="iPadMini" data-width="1024" data-height="768" class="btn_open waves-effect waves-light btn red lighten-3"><i class="material-icons center white-text">open_in_new</i></a>
+          </div>
+        </div>
+        <!-- iPadMini end -->
+      </div>
+
+      <div class="col s12 m4 l4">
+        <!-- nexus7 start -->
+        <div class="card z-depth-2">
+          <div class="card-content center">
+            <span class="card-title black-text">Nexus 7</span>
+            <p>Width: 960px, Height: 600px</p>
+          </div>
+          <div class="card-action center">
+            <a data-id="nexus7" data-width="960" data-height="600" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_portrait</i></a>
+
+            <a data-id="nexus7" data-width="600" data-height="960" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_landscape</i></a>
+
+            <a data-id="nexus7" data-width="960" data-height="600" class="btn_open waves-effect waves-light btn red lighten-3"><i class="material-icons center white-text">open_in_new</i></a>
+          </div>
+        </div>
+        <!-- nexus7 end -->
+      </div>
+
+      <div class="col s12 m4 l4">
+        <!-- nexus10 start -->
+        <div class="card z-depth-2">
+          <div class="card-content center">
+            <span class="card-title black-text">Nexus 10</span>
+            <p>Width: 1280px, Height: 800px</p>
+          </div>
+          <div class="card-action center">
+            <a data-id="nexus10" data-width="1280" data-height="800" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_portrait</i></a>
+
+            <a data-id="nexus10" data-width="800" data-height="1280" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_landscape</i></a>
+
+            <a data-id="nexus10" data-width="1280" data-height="800" class="btn_open waves-effect waves-light btn red lighten-3"><i class="material-icons center white-text">open_in_new</i></a>
+          </div>
+        </div>
+        <!-- nexus10 end -->
+      </div>
+
+    </div>
+
+  </body>
+  <script type="text/javascript">
+  window.changeViewData = {};
+  $('.btn_change_view').on('click', function () {
+    var id = $(this).data('id');
+    var width = $(this).data('width');
+    var height = $(this).data('height');
+
+    console.log('click change view btn');
+    console.log(id + ', width: ' + width + ', height: ' + height);
+
+    if (!window.changeViewData[id] || !window.changeViewData[id].windowDom) {
+      Materialize.toast('View not found', 3000);
+      return;
+    }
+
+    window.changeViewData[id].windowDom.resizeTo(width, height);
+  });
+
+  $('.btn_open').on('click', function () {
+    var id = $(this).data('id');
+    var width = $(this).data('width');
+    var height = $(this).data('height');
+
+    // if (window.changeViewData[id] && window.changeViewData[id].windowDom) { return; }
+
+    window.changeViewData[id] = {
+      windowDom: null
+    }
+
+    // var config = 'scrollbars=yes, status=yes, width=' + width + ', height=' + height;
+    var config = 'toolbar=yes, menubar=yes, status=yes, width=' + width + ', height=' + height;
+    var webUrl = $('#webUrl').val();
+    console.log('Web Url: ' + webUrl);
+    if (!webUrl) {
+      Materialize.toast('URL not allow empty', 3000);
+      return;
+    }
+    window.changeViewData[id].windowDom = window.open(webUrl, 'test', config);
+
+  });
+
+  $('#btn_open_all').on('click', function () {
+    if (!$('#webUrl').val()) {
+      Materialize.toast('URL not allow empty', 3000);
+      return;
+    }
+
+    $('.btn_open').each(function (index, dom) {
+      setTimeout(function () {
+        console.log('index: ' + index);
+        $('.btn_open')[index].click();
+      }, 2000 * index);
+    });
+  });
+  </script>
+</html>
