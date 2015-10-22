@@ -166,9 +166,9 @@
             <p>Width: 1024px, Height: 768px</p>
           </div>
           <div class="card-action center">
-            <a data-id="iPadMini" data-width="1024" data-height="768" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_portrait</i></a>
+            <a data-id="iPadMini" data-width="768" data-height="1024" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_portrait</i></a>
 
-            <a data-id="iPadMini" data-width="768" data-height="1024" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_landscape</i></a>
+            <a data-id="iPadMini" data-width="1024" data-height="768" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_landscape</i></a>
 
             <a data-id="iPadMini" data-width="1024" data-height="768" class="btn_open waves-effect waves-light btn red lighten-3"><i class="material-icons center white-text">open_in_new</i></a>
           </div>
@@ -184,9 +184,9 @@
             <p>Width: 960px, Height: 600px</p>
           </div>
           <div class="card-action center">
-            <a data-id="nexus7" data-width="960" data-height="600" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_portrait</i></a>
+            <a data-id="nexus7" data-width="600" data-height="960" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_portrait</i></a>
 
-            <a data-id="nexus7" data-width="600" data-height="960" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_landscape</i></a>
+            <a data-id="nexus7" data-width="960" data-height="600" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_landscape</i></a>
 
             <a data-id="nexus7" data-width="960" data-height="600" class="btn_open waves-effect waves-light btn red lighten-3"><i class="material-icons center white-text">open_in_new</i></a>
           </div>
@@ -202,9 +202,9 @@
             <p>Width: 1280px, Height: 800px</p>
           </div>
           <div class="card-action center">
-            <a data-id="nexus10" data-width="1280" data-height="800" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_portrait</i></a>
+            <a data-id="nexus10" data-width="800" data-height="1280"  class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_portrait</i></a>
 
-            <a data-id="nexus10" data-width="800" data-height="1280" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_landscape</i></a>
+            <a data-id="nexus10" data-width="1280" data-height="800" class="btn_change_view waves-effect waves-light btn blue lighten-3"><i class="material-icons center white-text">stay_primary_landscape</i></a>
 
             <a data-id="nexus10" data-width="1280" data-height="800" class="btn_open waves-effect waves-light btn red lighten-3"><i class="material-icons center white-text">open_in_new</i></a>
           </div>
@@ -245,7 +245,7 @@
     }
 
     // var config = 'scrollbars=yes, status=yes, width=' + width + ', height=' + height;
-    var config = 'toolbar=yes, menubar=yes, status=yes, width=' + width + ', height=' + height;
+    var config = 'scrollbars=0,status=1,width=' + width + ', height=' + height;
     var webUrl = $('#webUrl').val();
     console.log('Web Url: ' + webUrl);
     if (!webUrl) {
@@ -253,6 +253,11 @@
       return;
     }
     window.changeViewData[id].windowDom = window.open(webUrl, 'test', config);
+
+    setTimeout(function () {
+      $(window.changeViewData[id].windowDom.document.getElementById('wrap'))
+        .after('<div style="position: fixed; top: 10px; right: 30px; font-size: 20px; z-index: 100000; color: red">Device: ' + id + '</div>');
+    }, 2000);
 
   });
 
