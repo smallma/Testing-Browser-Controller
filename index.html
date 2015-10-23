@@ -252,7 +252,16 @@
       Materialize.toast('URL not allow empty', 3000);
       return;
     }
-    window.changeViewData[id].windowDom = window.open(webUrl, 'test', config);
+
+    try {
+      if (window.changeViewData[id] && window.changeViewData[id].windowDom) {
+        window.changeViewData[id].windowDom.close();
+      }
+    } catch () {
+
+    }
+
+    window.changeViewData[id].windowDom = window.open(webUrl, id, config);
 
     setTimeout(function () {
       $(window.changeViewData[id].windowDom.document.getElementById('wrap'))
