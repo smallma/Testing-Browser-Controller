@@ -16,7 +16,7 @@ This is a convenient web view controller, and support to open multiple size wind
    - Google Nexus 10
    - Samsung S4
 
-## 使用方式
+## How to use
 ![alt tag](https://cloud.githubusercontent.com/assets/429250/10655247/7d330112-78a5-11e5-984a-239b52a76192.png)
 
 open testView.html, paste url and click OPEN ALL VIEWS.
